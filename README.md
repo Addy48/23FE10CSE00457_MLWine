@@ -86,3 +86,8 @@ Kurtosis
 Correlation analysis between features and target variable
 
 Identification of key features influencing wine quality
+
+🔬 Lab 4: Feature Selection and Linear Regression Analysis
+📌 Objective
+
+To perform feature and variable set preparation, apply feature scaling, build a Linear Regression model, and analyze the model parameters (intercept and coefficients) using the Wine Quality dataset.
