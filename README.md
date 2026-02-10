@@ -128,6 +128,15 @@ Coefficients: Represent the influence of each feature on wine quality.
 Coefficient DataFrame Creation
 The intercept and feature coefficients are stored in a Pandas DataFrame and sorted to analyze feature importance.
 
+LAB 5 
+Descriptive statistical analysis
+ Data cleaning
+ Feature scaling
+ Feature selection
+ Logistic Regression model
+ Model evaluation
+ Coefficients & intercept in DataFrame
+
 📈 Observations
 
 Alcohol content generally shows the strongest positive influence on wine quality.
