@@ -144,3 +144,8 @@ Alcohol content generally shows the strongest positive influence on wine quality
 Volatile acidity often exhibits a negative impact on quality.
 
 Feature scaling is essential for meaningful coefficient comparison.
+
+Lab 6: Support Vector Machine (SVM) classification on the Wine Quality dataset to predict wine quality based on its physicochemical properties
+
+The goal of this experiment is to apply SVM classification to predict wine quality scores using chemical attributes of red wine. The project also explores how hyperparameter tuning using GridSearchCV improves model performance.
+
