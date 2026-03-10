@@ -128,7 +128,7 @@ Coefficients: Represent the influence of each feature on wine quality.
 Coefficient DataFrame Creation
 The intercept and feature coefficients are stored in a Pandas DataFrame and sorted to analyze feature importance.
 
-LAB 5 
+🔬 LAB 5 :
 Descriptive statistical analysis
  Data cleaning
  Feature scaling
@@ -145,7 +145,7 @@ Volatile acidity often exhibits a negative impact on quality.
 
 Feature scaling is essential for meaningful coefficient comparison.
 
-Lab 6: Support Vector Machine (SVM) classification on the Wine Quality dataset to predict wine quality based on its physicochemical properties
+🔬 Lab 6: Support Vector Machine (SVM) classification on the Wine Quality dataset to predict wine quality based on its physicochemical properties
 
 The goal of this experiment is to apply SVM classification to predict wine quality scores using chemical attributes of red wine. The project also explores how hyperparameter tuning using GridSearchCV improves model performance.
 
