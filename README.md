@@ -1,151 +1,177 @@
-🍷 23FE10CSE00457_MLWine
+# 🍷 23FE10CSE00457_MLWine
 
-This repository contains the implementation of Machine Learning Laboratory experiments conducted as part of the Machine Learning Lab (CSE3231) curriculum at Manipal University Jaipur.
+This repository contains the implementation of Machine Learning Laboratory experiments conducted as part of the **Machine Learning Lab (CSE3231)** curriculum at Manipal University Jaipur.
 
-All experiments are implemented in Python using Google Colab, following the official lab lecture plan.
-The Wine Quality Dataset from the UCI Machine Learning Repository is used as the base dataset for all experiments.
+All experiments are implemented in **Python using Google Colab**, following the official lab structure. The **Wine Quality Dataset (UCI Machine Learning Repository)** is used consistently across experiments.
 
-📊 Dataset Description
+---
 
-The Wine Quality dataset consists of physicochemical properties of Portuguese Vinho Verde wine samples.
-The objective is to analyze and model the relationship between chemical attributes and perceived wine quality.
+## 📊 Dataset Description
 
-🔹 Datasets Used
+The Wine Quality dataset consists of physicochemical properties of Portuguese Vinho Verde wine samples. The objective is to analyze and model the relationship between chemical attributes and wine quality.
 
-winequality-white.csv
+### 🔹 Datasets Used
+- `winequality-red.csv`
+- `winequality-white.csv`
 
-winequality-red.csv
+### 🔹 Dataset Details
+- Total Features: 11 (real-valued)
+- Target Variable: `quality` (integer score between 0 and 10)
+- Task Type: Regression and Classification
+- Source: UCI Machine Learning Repository
 
-🔹 Dataset Details
+---
 
-Total Features: 11 (real-valued)
+## 🧪 Experiments Covered
 
-Target Variable: quality (integer score between 0 and 10)
-
-Task Type: Regression and Classification
-
-Source: UCI Machine Learning Repository
-
-🧪 Experiments Covered
-🔬 Lab 1: Introduction to Python for Data Analysis
-
+### 🔬 Lab 1: Introduction to Python for Data Analysis
 This experiment focuses on understanding the dataset and applying basic Python data analysis techniques.
 
-Key Tasks:
+**Key Tasks:**
+- Loading datasets using Pandas  
+- Dataset inspection (`shape`, `info`, `describe`)  
+- Basic NumPy operations  
+- Understanding data structure and feature types  
 
-Loading datasets using Pandas
+---
 
-Dataset inspection (shape, info, describe)
-
-Basic NumPy operations
-
-Understanding data structure and feature types
-
-🔬 Lab 2: Data Preprocessing and Visualization
-
+### 🔬 Lab 2: Data Preprocessing and Visualization
 This experiment prepares the dataset for machine learning by cleaning, scaling, and visualizing the data.
 
-Key Tasks:
+**Key Tasks:**
+- Missing value analysis  
+- Feature–target separation  
+- Feature scaling using StandardScaler  
+- Data visualization:
+  - Histograms  
+  - Boxplots  
+  - Correlation heatmap  
 
-Missing value analysis
+---
 
-Feature–target separation
-
-Feature scaling using StandardScaler
-
-Data visualization techniques:
-
-Histograms
-
-Boxplots
-
-Correlation heatmap
-
-🔬 Lab 3: Descriptive Statistical Analysis
-
+### 🔬 Lab 3: Descriptive Statistical Analysis
 This experiment applies statistical methods to summarize and interpret the dataset.
 
-Key Tasks:
+**Key Tasks:**
+- Mean, Median, Variance, Standard Deviation  
+- Skewness and Kurtosis analysis  
+- Correlation analysis  
+- Identification of important features  
 
-Computation of descriptive statistics:
+---
 
-Mean
+### 🔬 Lab 4: Feature Selection and Linear Regression Analysis
 
-Median
+**Objective:**  
+To perform feature preparation, scaling, and build a Linear Regression model to analyze relationships between features and wine quality.
 
-Variance
+**Key Steps:**
+- Dataset loading and inspection  
+- Removal of non-numeric columns (if any)  
+- Feature (X) and target (y) definition  
+- Feature scaling using StandardScaler  
+- Train–test split  
+- Linear Regression model training  
+- Extraction of intercept and coefficients  
+- Feature importance analysis  
 
-Standard Deviation
+---
 
-Analysis of:
+### 🔬 Lab 5: Logistic Regression
 
-Skewness
+**Key Tasks:**
+- Data cleaning and preprocessing  
+- Feature scaling  
+- Feature selection  
+- Logistic Regression model training  
+- Model evaluation  
+- Analysis of coefficients and intercept  
 
-Kurtosis
+**Observations:**
+- Alcohol shows strong positive correlation with quality  
+- Volatile acidity shows negative correlation  
+- Scaling is essential for meaningful comparison  
 
-Correlation analysis between features and target variable
+---
 
-Identification of key features influencing wine quality
+### 🔬 Lab 6: Support Vector Machine (SVM) Classification
 
-🔬 Lab 4: Feature Selection and Linear Regression Analysis
+This experiment implements **SVM classification** to predict wine quality based on physicochemical properties.
 
-📌 Objective
+**Key Steps:**
+- Data preprocessing and scaling  
+- Train–test split  
+- Training SVM model using `SVC`  
+- Prediction on test data  
+- Evaluation using:
+  - Confusion Matrix  
+  - Classification Report  
+- Hyperparameter tuning using **GridSearchCV**  
 
-To perform feature and variable set preparation, apply feature scaling, build a Linear Regression model, and analyze the model parameters (intercept and coefficients) using the Wine Quality dataset.
-🔹 Methodology
+**Outcome:**
+- Improved classification performance after tuning  
+- Demonstrates impact of kernel-based learning  
 
-Dataset Loading
-The dataset is loaded using Pandas and inspected to ensure correct structure.
+---
 
-Data Type Verification
-The dataset is verified to be a Pandas DataFrame. Column data types are examined to identify non-numeric features.
+### 🔬 Lab 7: Decision Tree Classification
 
-Removal of Non-Numeric Columns
-Any string or object-type columns (if present) are removed, as machine learning models require numerical input.
+This experiment implements **Decision Tree classification** to model wine quality prediction.
 
-Feature and Target Variable Definition
+**Key Steps:**
+- Data preprocessing and feature scaling  
+- Train–test split  
+- Training Decision Tree model  
+- Visualization of decision tree structure  
+- Model evaluation using:
+  - Confusion Matrix  
+  - Classification Report  
 
-Feature set (X): All physicochemical attributes
+**Outcome:**
+- Provides interpretable model structure  
+- Highlights feature importance in decision making  
 
-Target variable (y): Wine quality score
+*(Aligned with supervised learning tasks as per lab handout: classification model building and evaluation)*  [oai_citation:0‡MachineLearningLabHandouts (3) (2).pdf](sediment://file_00000000d5c071fabe644a01036eaad1)
 
-Feature Scaling
-Standardization is applied using StandardScaler to scale features to zero mean and unit variance.
-This ensures all features contribute equally to the regression model.
+---
 
-Train–Test Split
-The dataset is split into training and testing sets to evaluate model generalization.
+### 🔬 Lab 8: K-Means Clustering (Unsupervised Learning)
 
-Linear Regression Model Training
-A Linear Regression model is trained using the scaled training data.
+This experiment implements **K-Means clustering** to identify patterns in unlabeled wine data.
 
-Model Parameter Extraction
+**Key Steps:**
+- Combining red and white wine datasets  
+- Encoding categorical feature (`type`)  
+- Removing target variable (`quality`)  
+- Feature scaling  
+- Determining optimal clusters using Elbow Method  
+- Applying K-Means clustering  
+- PCA-based visualization  
+- Cluster evaluation using:
+  - Silhouette Score  
+  - Cluster vs Quality comparison  
 
-Intercept: Represents the predicted quality when all feature values are zero.
+**Outcome:**
+- Identifies hidden structure in data  
+- Demonstrates difference between clustering and classification  
 
-Coefficients: Represent the influence of each feature on wine quality.
+*(Aligned with unsupervised learning objective: pattern identification in unlabeled data)*  [oai_citation:1‡MachineLearningLabHandouts (3) (2).pdf](sediment://file_00000000d5c071fabe644a01036eaad1)
 
-Coefficient DataFrame Creation
-The intercept and feature coefficients are stored in a Pandas DataFrame and sorted to analyze feature importance.
+---
 
-🔬 LAB 5 :
-Descriptive statistical analysis
- Data cleaning
- Feature scaling
- Feature selection
- Logistic Regression model
- Model evaluation
- Coefficients & intercept in DataFrame
+## ⚙️ Technologies Used
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
 
-📈 Observations
+---
 
-Alcohol content generally shows the strongest positive influence on wine quality.
+## 🎯 Key Takeaways
 
-Volatile acidity often exhibits a negative impact on quality.
-
-Feature scaling is essential for meaningful coefficient comparison.
-
-🔬 Lab 6: Support Vector Machine (SVM) classification on the Wine Quality dataset to predict wine quality based on its physicochemical properties
-
-The goal of this experiment is to apply SVM classification to predict wine quality scores using chemical attributes of red wine. The project also explores how hyperparameter tuning using GridSearchCV improves model performance.
-
+- End-to-end ML workflow from preprocessing to modeling  
+- Implementation of both **supervised and unsupervised learning techniques**  
+- Importance of scaling, evaluation, and model tuning  
+- Understanding differences between regression, classification, and clustering  
