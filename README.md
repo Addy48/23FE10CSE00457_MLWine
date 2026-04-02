@@ -158,6 +158,43 @@ This experiment implements **K-Means clustering** to identify patterns in unlabe
 *(Aligned with unsupervised learning objective: pattern identification in unlabeled data)*  [oai_citation:1‡MachineLearningLabHandouts (3) (2).pdf](sediment://file_00000000d5c071fabe644a01036eaad1)
 
 ---
+### 🔬 Lab 9: Artificial Neural Network (ANN)
+
+This experiment implements an Artificial Neural Network for wine quality prediction.
+
+**Key Steps:**
+- Data preprocessing and scaling  
+- Conversion of target variable to binary classification (`quality ≥ 6`)  
+- Train–test split  
+- Building ANN model using dense layers  
+- Model training with validation  
+- Evaluation using accuracy and loss curves  
+- Confusion matrix analysis  
+
+**Outcome:**
+- ANN performs well on tabular data  
+- Binary classification improves prediction performance  
+- Demonstrates learning patterns through deep neural networks  
+
+---
+
+### 🔬 Lab 10: Convolutional Neural Network (CNN)
+
+This experiment implements a 1D Convolutional Neural Network adapted for tabular data.
+
+**Key Steps:**
+- Reshaping input data for CNN  
+- Building Conv1D model  
+- Model training and validation  
+- Evaluation using accuracy, loss curves, and confusion matrix  
+
+**Outcome:**
+- CNN can be applied to tabular data with reshaping  
+- Performance is generally comparable or slightly lower than ANN  
+- Highlights importance of matching model architecture with data type  
+
+---
+
 
 ## ⚙️ Technologies Used
 - Python  
