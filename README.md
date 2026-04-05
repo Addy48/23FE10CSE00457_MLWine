@@ -194,6 +194,71 @@ This experiment implements a 1D Convolutional Neural Network adapted for tabular
 - Highlights importance of matching model architecture with data type  
 
 ---
+---
+
+### 🔬 Lab 11: Natural Language Processing (NLP)
+
+This experiment focuses on applying core Natural Language Processing techniques on labelled text datasets (Amazon, IMDB, Yelp).
+
+**Key Steps:**
+- Loading and combining multiple labelled text datasets  
+- Text preprocessing:
+  - Tokenization  
+  - Stopword removal  
+  - Lemmatization  
+  - Stemming  
+- Part-of-Speech (POS) tagging  
+- Named Entity Recognition (NER)  
+- Text analysis using:
+  - Frequency Distribution  
+  - Lexical Dispersion Plot  
+  - Word Cloud  
+  - Collocations  
+
+**Dataset Used:**
+- Sentiment Labelled Sentences Dataset (Amazon, IMDB, Yelp)
+
+**Outcome:**
+- Extracted meaningful patterns from textual data  
+- Identified frequently occurring positive and negative words  
+- Demonstrated importance of preprocessing in NLP  
+- Visualized word distributions and usage patterns  
+
+---
+
+### 🔬 Lab 12: Generative AI and Prompt Engineering
+
+This experiment explores the fundamentals of Generative AI and the impact of prompt design on output quality.  [oai_citation:0‡GenAI.docx](sediment://file_0000000010d472089227ac0e6831dbc1)  
+
+**Key Concepts:**
+- Generative AI fundamentals  
+- Large Language Models (LLMs)  
+- Prompt engineering techniques  
+
+**Tools Used:**
+- ChatGPT  
+- Google Gemini  
+
+**Experiments Performed:**
+- Basic prompt → general explanation  
+- Constrained prompt → word-limited response  
+- Role-based prompt → improved explanation quality  
+- Creative prompt → story generation  
+- Code generation → Python program generation  
+- Comparative prompting → output comparison across tools  
+
+**Observations:**
+- Prompt structure directly affects output quality  
+- Role-based prompts improve depth and clarity  
+- Constraints (like word limits) improve precision  
+- Generative AI is effective for text, code, and creative tasks  
+
+**Outcome:**
+- Understood how Generative AI models generate content  
+- Learned multiple prompting strategies  
+- Observed differences between AI tools in response style  
+
+---
 
 
 ## ⚙️ Technologies Used
