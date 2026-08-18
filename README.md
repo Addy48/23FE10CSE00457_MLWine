@@ -1,279 +1,37 @@
-# 🍷 23FE10CSE00457_MLWine
+# Machine Learning Lab (CSE3231)
 
-This repository contains the implementation of Machine Learning Laboratory experiments conducted as part of the **Machine Learning Lab (CSE3231)** curriculum at Manipal University Jaipur.
+Manipal University Jaipur · **23FE10CSE00457** · [Aaditya Upadhyay](https://github.com/Addy48)
 
-All experiments are implemented in **Python using Google Colab**, following the official lab structure. The **Wine Quality Dataset (UCI Machine Learning Repository)** is used consistently across experiments.
+Labs in Python (Colab / Jupyter). Primary dataset: **UCI Wine Quality** (red + white). Lab 1 also uses the US Housing walkthrough from the handout. Lab 11 uses labelled sentences (Amazon / IMDB / Yelp).
 
----
-
-## 📊 Dataset Description
-
-The Wine Quality dataset consists of physicochemical properties of Portuguese Vinho Verde wine samples. The objective is to analyze and model the relationship between chemical attributes and wine quality.
-
-### 🔹 Datasets Used
-- `winequality-red.csv`
-- `winequality-white.csv`
-
-### 🔹 Dataset Details
-- Total Features: 11 (real-valued)
-- Target Variable: `quality` (integer score between 0 and 10)
-- Task Type: Regression and Classification
-- Source: UCI Machine Learning Repository
+This is the **canonical** lab repo. The older `Aaditya_Upadhyay_23FE10CSE00457_MLLab` tree is merged here.
 
 ---
 
-## 🧪 Experiments Covered
+## Notebooks
 
-### 🔬 Lab 1: Introduction to Python for Data Analysis
-This experiment focuses on understanding the dataset and applying basic Python data analysis techniques.
-
-**Key Tasks:**
-- Loading datasets using Pandas  
-- Dataset inspection (`shape`, `info`, `describe`)  
-- Basic NumPy operations  
-- Understanding data structure and feature types  
-
----
-
-### 🔬 Lab 2: Data Preprocessing and Visualization
-This experiment prepares the dataset for machine learning by cleaning, scaling, and visualizing the data.
-
-**Key Tasks:**
-- Missing value analysis  
-- Feature–target separation  
-- Feature scaling using StandardScaler  
-- Data visualization:
-  - Histograms  
-  - Boxplots  
-  - Correlation heatmap  
+| Lab | Topic | File |
+|-----|--------|------|
+| 1 | Intro / housing EDA | `ML_LAB_1.ipynb` |
+| 1–4 | Wine EDA, preprocess, stats, linear regression | `WineDataset[1_4].ipynb` |
+| 5 | Logistic regression | `LAB 5 Logistic Regression.ipynb` |
+| 6 | SVM | `Lab_6_SVM.ipynb` |
+| 7 | Decision tree | `LAB 7 Decision Tree .ipynb` |
+| 8 | K-Means | `LAB 8 KMeans.ipynb` |
+| 9–10 | ANN + 1D CNN | `LAB 9&10 ANN_&_CNN.ipynb` |
+| 11 | NLP | `Lab11_NLP_ipynb.ipynb` |
+| 12 | Generative AI / prompting | `GenAI.docx` |
+| — | Self project | `MLSelfProjectipynb.ipynb` |
+| — | Test notebook | `TEST1.ipynb` |
 
 ---
 
-### 🔬 Lab 3: Descriptive Statistical Analysis
-This experiment applies statistical methods to summarize and interpret the dataset.
+## Dataset (wine)
 
-**Key Tasks:**
-- Mean, Median, Variance, Standard Deviation  
-- Skewness and Kurtosis analysis  
-- Correlation analysis  
-- Identification of important features  
+UCI Wine Quality — 11 physicochemical features, `quality` 0–10. Source: UCI ML Repository. Files are loaded inside the notebooks (not always stored in git).
 
 ---
 
-### 🔬 Lab 4: Feature Selection and Linear Regression Analysis
+## Stack
 
-**Objective:**  
-To perform feature preparation, scaling, and build a Linear Regression model to analyze relationships between features and wine quality.
-
-**Key Steps:**
-- Dataset loading and inspection  
-- Removal of non-numeric columns (if any)  
-- Feature (X) and target (y) definition  
-- Feature scaling using StandardScaler  
-- Train–test split  
-- Linear Regression model training  
-- Extraction of intercept and coefficients  
-- Feature importance analysis  
-
----
-
-### 🔬 Lab 5: Logistic Regression
-
-**Key Tasks:**
-- Data cleaning and preprocessing  
-- Feature scaling  
-- Feature selection  
-- Logistic Regression model training  
-- Model evaluation  
-- Analysis of coefficients and intercept  
-
-**Observations:**
-- Alcohol shows strong positive correlation with quality  
-- Volatile acidity shows negative correlation  
-- Scaling is essential for meaningful comparison  
-
----
-
-### 🔬 Lab 6: Support Vector Machine (SVM) Classification
-
-This experiment implements **SVM classification** to predict wine quality based on physicochemical properties.
-
-**Key Steps:**
-- Data preprocessing and scaling  
-- Train–test split  
-- Training SVM model using `SVC`  
-- Prediction on test data  
-- Evaluation using:
-  - Confusion Matrix  
-  - Classification Report  
-- Hyperparameter tuning using **GridSearchCV**  
-
-**Outcome:**
-- Improved classification performance after tuning  
-- Demonstrates impact of kernel-based learning  
-
----
-
-### 🔬 Lab 7: Decision Tree Classification
-
-This experiment implements **Decision Tree classification** to model wine quality prediction.
-
-**Key Steps:**
-- Data preprocessing and feature scaling  
-- Train–test split  
-- Training Decision Tree model  
-- Visualization of decision tree structure  
-- Model evaluation using:
-  - Confusion Matrix  
-  - Classification Report  
-
-**Outcome:**
-- Provides interpretable model structure  
-- Highlights feature importance in decision making  
-
-*(Aligned with supervised learning tasks as per lab handout: classification model building and evaluation)*  [oai_citation:0‡MachineLearningLabHandouts (3) (2).pdf](sediment://file_00000000d5c071fabe644a01036eaad1)
-
----
-
-### 🔬 Lab 8: K-Means Clustering (Unsupervised Learning)
-
-This experiment implements **K-Means clustering** to identify patterns in unlabeled wine data.
-
-**Key Steps:**
-- Combining red and white wine datasets  
-- Encoding categorical feature (`type`)  
-- Removing target variable (`quality`)  
-- Feature scaling  
-- Determining optimal clusters using Elbow Method  
-- Applying K-Means clustering  
-- PCA-based visualization  
-- Cluster evaluation using:
-  - Silhouette Score  
-  - Cluster vs Quality comparison  
-
-**Outcome:**
-- Identifies hidden structure in data  
-- Demonstrates difference between clustering and classification  
-
-*(Aligned with unsupervised learning objective: pattern identification in unlabeled data)*  [oai_citation:1‡MachineLearningLabHandouts (3) (2).pdf](sediment://file_00000000d5c071fabe644a01036eaad1)
-
----
-### 🔬 Lab 9: Artificial Neural Network (ANN)
-
-This experiment implements an Artificial Neural Network for wine quality prediction.
-
-**Key Steps:**
-- Data preprocessing and scaling  
-- Conversion of target variable to binary classification (`quality ≥ 6`)  
-- Train–test split  
-- Building ANN model using dense layers  
-- Model training with validation  
-- Evaluation using accuracy and loss curves  
-- Confusion matrix analysis  
-
-**Outcome:**
-- ANN performs well on tabular data  
-- Binary classification improves prediction performance  
-- Demonstrates learning patterns through deep neural networks  
-
----
-
-### 🔬 Lab 10: Convolutional Neural Network (CNN)
-
-This experiment implements a 1D Convolutional Neural Network adapted for tabular data.
-
-**Key Steps:**
-- Reshaping input data for CNN  
-- Building Conv1D model  
-- Model training and validation  
-- Evaluation using accuracy, loss curves, and confusion matrix  
-
-**Outcome:**
-- CNN can be applied to tabular data with reshaping  
-- Performance is generally comparable or slightly lower than ANN  
-- Highlights importance of matching model architecture with data type  
-
----
----
-
-### 🔬 Lab 11: Natural Language Processing (NLP)
-
-This experiment focuses on applying core Natural Language Processing techniques on labelled text datasets (Amazon, IMDB, Yelp).
-
-**Key Steps:**
-- Loading and combining multiple labelled text datasets  
-- Text preprocessing:
-  - Tokenization  
-  - Stopword removal  
-  - Lemmatization  
-  - Stemming  
-- Part-of-Speech (POS) tagging  
-- Named Entity Recognition (NER)  
-- Text analysis using:
-  - Frequency Distribution  
-  - Lexical Dispersion Plot  
-  - Word Cloud  
-  - Collocations  
-
-**Dataset Used:**
-- Sentiment Labelled Sentences Dataset (Amazon, IMDB, Yelp)
-
-**Outcome:**
-- Extracted meaningful patterns from textual data  
-- Identified frequently occurring positive and negative words  
-- Demonstrated importance of preprocessing in NLP  
-- Visualized word distributions and usage patterns  
-
----
-
-### 🔬 Lab 12: Generative AI and Prompt Engineering
-
-This experiment explores the fundamentals of Generative AI and the impact of prompt design on output quality.  [oai_citation:0‡GenAI.docx](sediment://file_0000000010d472089227ac0e6831dbc1)  
-
-**Key Concepts:**
-- Generative AI fundamentals  
-- Large Language Models (LLMs)  
-- Prompt engineering techniques  
-
-**Tools Used:**
-- ChatGPT  
-- Google Gemini  
-
-**Experiments Performed:**
-- Basic prompt → general explanation  
-- Constrained prompt → word-limited response  
-- Role-based prompt → improved explanation quality  
-- Creative prompt → story generation  
-- Code generation → Python program generation  
-- Comparative prompting → output comparison across tools  
-
-**Observations:**
-- Prompt structure directly affects output quality  
-- Role-based prompts improve depth and clarity  
-- Constraints (like word limits) improve precision  
-- Generative AI is effective for text, code, and creative tasks  
-
-**Outcome:**
-- Understood how Generative AI models generate content  
-- Learned multiple prompting strategies  
-- Observed differences between AI tools in response style  
-
----
-
-
-## ⚙️ Technologies Used
-- Python  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Seaborn  
-- Scikit-learn  
-
----
-
-## 🎯 Key Takeaways
-
-- End-to-end ML workflow from preprocessing to modeling  
-- Implementation of both **supervised and unsupervised learning techniques**  
-- Importance of scaling, evaluation, and model tuning  
-- Understanding differences between regression, classification, and clustering  
+Python · Pandas · NumPy · Matplotlib · Seaborn · scikit-learn · (labs 9–11) Keras / NLTK as used in each notebook
